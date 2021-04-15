@@ -11,7 +11,7 @@ const router = require("express").Router()
 // Router Routes
 ////////////////////////////////
 router.get("/", (req, res) => {
-    res.render("home")
+    res.render("index")
 })
 
 ///////////////////////////////
