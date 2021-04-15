@@ -64,8 +64,8 @@ app.use(
 app.use("/", HomeRouter);
 
 // Articles Router
+app.use(express.urlencoded({extended: false}))
 app.use('/articles', articleRouter) // articles.js router
-
 /////////////////////////////////////
 // App Listener
 /////////////////////////////////////
