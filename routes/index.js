@@ -11,7 +11,17 @@ const router = require("express").Router()
 // Router Routes
 ////////////////////////////////
 router.get("/", (req, res) => {
-    res.render("index")
+    const articles = [{
+        title: 'Test Article',
+        createdAt: new Date(), // this allows for the date to render correctly
+        description: 'Test Description'
+    },
+    {
+    title: 'Test Article 2',
+    createdAt: new Date(), // this allows for the date to render correctly
+    description: 'Test Description 2'
+}]
+    res.render("articles/index", {articles: articles})
 })
 
 ///////////////////////////////

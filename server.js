@@ -63,6 +63,9 @@ app.use(
 //HomeRouter
 app.use("/", HomeRouter);
 
+// Articles Router
+app.use('/articles', articleRouter) // articles.js router
+
 /////////////////////////////////////
 // App Listener
 /////////////////////////////////////
